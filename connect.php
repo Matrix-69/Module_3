@@ -2,11 +2,12 @@
 $servername="localhost";
 $username="gcu";
 $password="123456";
-$dbname="engg";
+$dbname = "engg";
 // create connection
-$conn = new mysqli($servername, $username, $password, $dbname)
+$conn = new mysqli($servername, $username, $password, $dbname);
 // check connection
-if($conn->connect_error){
+if ($conn->connect_error)
+{
     die("Connection Failed: ". $conn->connect_error);
 }
 echo"Connected successfully!";
